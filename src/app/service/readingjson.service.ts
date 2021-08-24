@@ -8,7 +8,7 @@ import { map,tap } from 'rxjs/operators';
 })
 export class ReadingjsonService {
 
-  private url:string = "/assets/json/dados_painel.json";
+  private url:string = "assets/json/dados_painel.json";
 
   constructor(
     private http: HttpClient
