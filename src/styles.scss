@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+@import './config-scss/variables.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+html {
+  background-color: var(--bg_pagina);
+  color: var(--preto);
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  background-color: var(--branco);
+  border-radius: var(--curva_borda);
+  box-sizing: border-box;
+  margin: 20px auto;
+  max-width: 100%;
+  padding: rem-calc(30);
+  width: rem-calc(1140);
+}
+
+//Icones
+
+.icone {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: rem-calc(33);
+  margin-right: rem-calc(7);
+  max-height: 100%;
+  max-width: 100%;
+  width: rem-calc(33);
+
+  &.disponivel {
+    background-image: var(--icone-disponivel);
+  }
+
+  &.indisponivel {
+    background-image: var(--icone-indisponivel);
+  }
+
+  &.manutencao {
+    background-image: var(--icone-manutencao);
+  }
+
+  &.instabilidade {
+    background-image: var(--icone-instabilidade);
+  }
+}
+
+.button-default {
+  background-color: var(--amarelo_2);
+  color: var(--cinza_8);
+  font-weight: bold;
+
+  &.button-certidao {
+    margin-top: rem-calc(50);
+    float: right;
+  }
+}
+
+.filtro {
+  color: var(--cinza_6);
+
+  mat-form-field {
+    position: relative;
+    top: rem-calc(10);
+  }
+
+  ::ng-deep .mat-form-field-flex {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .titulo {
+    font-weight: bold;
+  }
+}

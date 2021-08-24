@@ -1,0 +1,807 @@
+{
+  "lista": [{
+    "sistema": "Elo 443",
+    "status": "disponivel",
+    "ultimos_dias": ["disponivel", "indisponivel", "disponivel", "manutencao", "instabilidade", "indisponivel", "instabilidade"],
+    "info": "Disponível à 100 dias e 20 horas",
+    "eventos_calendario": [{
+        "date": "2021-08-23",
+        "classNames": "disponivel"
+      },
+      {
+        "date": "2021-08-24",
+        "classNames": "indisponivel"
+      }
+    ],
+    "manutencao_programada": [{
+        "dia": "01 de setembro de 2021",
+        "info": [{
+            "horario": "01h30 a 03h56",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 2"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 3"
+          }
+        ]
+      },
+      {
+        "dia": "25 de setembro de 2021",
+        "info": [{
+            "horario": "04h35 a 11h46",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "10h23 a 12h00",
+            "motivo": "MOTIVO 2"
+          }
+        ]
+      }
+    ],
+    "historico": [{
+        "dia": "01 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "12 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "15 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      }
+
+    ]
+  }, {
+    "sistema": "SEI Login",
+    "status": "instabilidade",
+    "ultimos_dias": ["instabilidade", "indisponivel", "manutencao", "disponivel", "instabilidade", "indisponivel", "instabilidade"],
+    "info": "Disponível à 100 dias e 20 horas",
+    "eventos_calendario": [{
+        "date": "2021-08-23",
+        "classNames": "disponivel"
+      },
+      {
+        "date": "2021-08-24",
+        "classNames": "indisponivel"
+      }
+    ],
+    "manutencao_programada": [{
+        "dia": "01 de setembro de 2021",
+        "info": [{
+            "horario": "01h30 a 03h56",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 2"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 3"
+          }
+        ]
+      },
+      {
+        "dia": "25 de setembro de 2021",
+        "info": [{
+            "horario": "04h35 a 11h46",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "10h23 a 12h00",
+            "motivo": "MOTIVO 2"
+          }
+        ]
+      }
+    ],
+    "historico": [{
+        "dia": "01 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "12 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "15 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      }
+
+    ]
+  }, {
+    "sistema": "Elo 443",
+    "status": "manutencao",
+    "ultimos_dias": ["manutencao", "indisponivel", "disponivel", "manutencao", "instabilidade", "indisponivel", "manutencao"],
+    "info": "Disponível à 100 dias e 20 horas",
+    "eventos_calendario": [{
+        "date": "2021-08-23",
+        "classNames": "disponivel"
+      },
+      {
+        "date": "2021-08-24",
+        "classNames": "indisponivel"
+      }
+    ],
+    "manutencao_programada": [{
+        "dia": "01 de setembro de 2021",
+        "info": [{
+            "horario": "01h30 a 03h56",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 2"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 3"
+          }
+        ]
+      },
+      {
+        "dia": "25 de setembro de 2021",
+        "info": [{
+            "horario": "04h35 a 11h46",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "10h23 a 12h00",
+            "motivo": "MOTIVO 2"
+          }
+        ]
+      }
+    ],
+    "historico": [{
+        "dia": "01 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "12 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "15 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      }
+
+    ]
+  }, {
+    "sistema": "Elo 443",
+    "status": "indisponivel",
+    "ultimos_dias": ["manutencao", "indisponivel", "disponivel", "manutencao", "instabilidade", "indisponivel", "indisponivel"],
+    "info": "Disponível à 100 dias e 20 horas",
+    "eventos_calendario": [{
+        "date": "2021-08-23",
+        "classNames": "disponivel"
+      },
+      {
+        "date": "2021-08-24",
+        "classNames": "indisponivel"
+      }
+    ],
+    "manutencao_programada": [{
+        "dia": "01 de setembro de 2021",
+        "info": [{
+            "horario": "01h30 a 03h56",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 2"
+          },
+          {
+            "horario": "06h23 a 09h12",
+            "motivo": "MOTIVO 3"
+          }
+        ]
+      },
+      {
+        "dia": "25 de setembro de 2021",
+        "info": [{
+            "horario": "04h35 a 11h46",
+            "motivo": "MOTIVO 1"
+          },
+          {
+            "horario": "10h23 a 12h00",
+            "motivo": "MOTIVO 2"
+          }
+        ]
+      }
+    ],
+    "historico": [{
+        "dia": "01 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "12 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      },
+      {
+        "dia": "15 de setembro de 2021",
+        "link_certidao": "#",
+        "status_horas": [{
+            "status": "Disponível",
+            "total_horas": "27h"
+          },
+          {
+            "status": "Indisponível",
+            "total_horas": "30h"
+          },
+          {
+            "status": "Instável",
+            "total_horas": "22h"
+          },
+          {
+            "status": "Manutenção programada",
+            "total_horas": "28h"
+          }
+        ],
+        "eventos": [{
+            "status": "Indisponível",
+            "periodos_inicio": "19h50",
+            "periodos_final": "20h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "17h50",
+            "periodos_final": "18h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Indisponível",
+            "periodos_inicio": "15h50",
+            "periodos_final": "16h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Manutenção programada",
+            "periodos_inicio": "21h50",
+            "periodos_final": "22h",
+            "link_certidao": "#"
+          },
+          {
+            "status": "Disponível",
+            "periodos_inicio": "08h50",
+            "periodos_final": "09h",
+            "link_certidao": "#"
+          }
+        ]
+      }
+
+    ]
+  }]
+}

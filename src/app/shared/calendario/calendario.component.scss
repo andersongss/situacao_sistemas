@@ -1,0 +1,71 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+  text-transform: uppercase;
+  
+  ::ng-deep .fc {
+    .fc-header-toolbar {
+      
+      display: block !important;
+      text-align: center;
+      width: 100%;
+
+      .fc-toolbar-chunk {
+        .fc-toolbar-title {
+          font-size: rem-calc(16);
+          font-weight: bold;
+        }
+
+        .fc-today-button {
+          display: none;
+        }
+      }
+    }
+
+    .fc-scrollgrid {
+      border: none;
+
+      * {
+        border: none;
+        color: var(--cinza_7);
+      }
+
+      a.fc-col-header-cell-cushion {
+        font-weight: bold;
+      }
+
+      a.fc-daygrid-event {
+        width: rem-calc(15);
+        height: rem-calc(15);
+        border-radius: 100%;
+        position: absolute;
+        left: rem-calc(15);
+      }
+
+      .fc-daygrid-day {
+        border: none;
+
+        .fc-daygrid-day-frame {
+          height: rem-calc(50);
+          width: rem-calc(50);
+
+          .fc-daygrid-day-top {
+            flex-direction: unset;
+            justify-content: center;
+            position: relative;
+            top: rem-calc(10);
+          }
+        }
+
+        &.fc-day-today {
+          background-color: transparent;
+          font-weight: bold;
+          
+          .fc-daygrid-day-number {
+            color: blueviolet;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+  <form action="" class="filtro" fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start center">
+    <span class="titulo">Filtro</span>
+    <mat-form-field appearance="fill">
+      <mat-label>Categoria</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let categoria of categorias" [value]="categoria.value">
+          {{categoria.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button class="button-default">Filtrar</button>
+  </form>

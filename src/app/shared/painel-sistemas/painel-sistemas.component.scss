@@ -1,0 +1,55 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+  width: 100%;
+
+  mat-accordion {
+
+    mat-expansion-panel {
+      border-radius: var(--curva_borda);
+      box-shadow: none;
+
+      &.header {
+        ::ng-deep .mat-expansion-panel-header[aria-disabled=true] {
+          background-color: var(--azul_2);
+          color: var(--branco) !important;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: rem-calc(15) 0;
+        }
+
+        .status {
+          text-align: center;
+        }
+      }
+
+      &.multi-sistemas {
+        background-color: var(--cinza_6);
+        
+        mat-expansion-panel-header {
+          
+          mat-panel-title {
+            color: var(--branco) !important;
+            font-size: rem-calc(20);
+            font-weight: bold;
+            text-transform: uppercase;
+
+            .ver-unidades {
+              font-size: rem-calc(12);
+              margin-left: rem-calc(10);
+            }
+
+          }
+          
+          ::ng-deep .mat-expansion-panel-header-title {
+            justify-content: center;
+          }
+          ::ng-deep .mat-expansion-indicator::after {
+            color: var(--branco);  
+          }
+        }
+
+      }
+    }
+  }
+}

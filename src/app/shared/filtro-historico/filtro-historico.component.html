@@ -1,0 +1,20 @@
+<form action="" class="filtro" fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="25px" fxLayoutAlign="start center">
+    <span class="titulo">Filtro</span>
+    <mat-form-field appearance="fill">
+      <mat-label>Ano</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let ano of anos" [value]="ano.value">
+          {{ano.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Categoria</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let mes of meses" [value]="mes.value">
+            {{mes.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    <button mat-button class="button-default">Filtrar</button>
+  </form>

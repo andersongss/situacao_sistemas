@@ -1,0 +1,10 @@
+@import '../../../config-scss/variables.scss';
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    #title {
+        color: var(--azul_2);
+        font-weight: bold;
+        font-size: rem-calc(34);
+    }
+}

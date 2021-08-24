@@ -1,0 +1,34 @@
+@import '../../../config-scss/variables.scss';
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    mat-card {
+        box-shadow: none;
+        background-color: var(--amarelo_1);
+        border-radius: var(--curva_borda);
+        padding: rem-calc(25) rem-calc(15);
+
+        mat-card-title {
+            color: var(--azul_2);
+            font-size: rem-calc(25);
+            font-weight: bold;
+        }
+
+        mat-card-content {
+            background-color: var(--branco);
+            border-radius: var(--curva_borda);
+            color: var(--cinza_7);
+            font-size: rem-calc(14);
+            margin-top: rem-calc(20);
+            padding: rem-calc(15);
+
+            mat-card-subtitle {
+                font-weight: bold;
+                margin-bottom: rem-calc(10);
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+    }
+}

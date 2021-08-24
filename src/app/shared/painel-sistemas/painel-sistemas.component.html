@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-between center">
+  <!-- Últimos 7 dias -->
+  <check-status (emitter)="send($event)"></check-status>
+  <!-- Filtro categoria -->
+  <filtro-painel></filtro-painel>
+</div>
+
+<!-- Header Painel -->
+<mat-accordion>
+  <mat-expansion-panel disabled class="header">
+    <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="start center">
+      <mat-panel-title class="nome-sistema" fxFlex="100%" fxFlex.gt-sm="10%">Serviços</mat-panel-title>
+      <mat-panel-description fxFlex="100%" fxFlex.gt-sm="90%">
+        <div class="status" fxFlex="100%" fxFlex.gt-sm="30%">
+          Status - <span>últimos 7 dias</span>
+        </div>
+        <div class="info" fxFlex="100%" fxFlex.gt-sm="70%">Disponibilidade</div>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <lista-sistemas [checked]="checked"></lista-sistemas>
+
+  <mat-expansion-panel class="multi-sistemas">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="nome-sistema">PJE <span class="ver-unidades">Ver unidades</span></mat-panel-title>
+    </mat-expansion-panel-header>
+    <lista-sistemas [checked]="checked"></lista-sistemas>
+  </mat-expansion-panel>
+
+</mat-accordion>

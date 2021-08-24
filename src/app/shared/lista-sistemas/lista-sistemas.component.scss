@@ -1,0 +1,224 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+  width: 100%;
+
+  .painel {
+    border-radius: var(--curva_borda);
+    box-shadow: none;
+    margin-bottom: rem-calc(10);
+    background-color: var(--cinza_2);
+    color: var(--cinza_8);
+
+    &.painel {
+      .nome-sistema {
+        font-size: rem-calc(14);
+        font-weight: bold;
+      }
+
+      .status {
+        justify-content: center;
+        position: relative;
+        top: 2px;
+
+        .hoje {
+          .icone {
+            position: relative;
+          }
+        }
+
+        .ultimos_dias {
+          justify-content: center;
+
+          span {
+            display: inline-block;
+            height: rem-calc(38);
+            width: rem-calc(16);
+            margin-right: rem-calc(7);
+
+            &.disponivel {
+              background-color: var(--verde_1);
+            }
+
+            &.indisponivel {
+              background-color: var(--vermelho_2);
+            }
+
+            &.manutencao {
+              background-color: var(--azul_1);
+            }
+
+            &.instabilidade {
+              background-color: var(--amarelo_3);
+            }
+          }
+        }
+      }
+
+      .main-panel {
+        padding: rem-calc(20);
+        background-color: var(--branco);
+        border-radius: var(--curva_borda);
+
+        .manutencao-programada {
+          border-color: var(--cinza_3);
+          border-radius: var(--curva_borda);
+          border-style: solid;
+          border-width: 1px;
+          box-shadow: none;
+          padding: 0;
+          overflow: hidden;
+
+          .titulo {
+            background-color: var(--cinza_2);
+            color: var(--cinza_8);
+            font-size: rem-calc(20);
+            justify-content: center;
+            padding: rem-calc(15);
+            width: 100%;
+
+            mat-card-title {
+              font-weight: bold;
+              margin-bottom: 0;
+            }
+          }
+
+          .info {
+            color: var (--cinca_7);
+            padding: rem-calc(15);
+
+            &:nth-child(even) {
+              background-color: var(--cinza_1);
+            }
+          }
+        }
+      }
+
+    }
+
+    .header_historico {
+      margin: rem-calc(30) 0;
+
+      .titulo-historico {
+        font-size: rem-calc(20);
+        font-weight: bold;
+        position: relative;
+        top: rem-calc(10);
+      }
+    }
+
+    .historico-servico {
+      mat-expansion-panel {
+        border-radius: rem-calc(15);
+        margin-bottom: rem-calc(15);
+
+        mat-expansion-panel-header {
+          background-color: var(--cinza_8);
+          border-radius: rem-calc(15) rem-calc(15) 0 0;
+
+          mat-panel-title {
+            color: var(--branco);
+
+            .donwload-certidao {
+              .link {
+                align-items: center;
+                color: var(--branco);
+                display: flex;
+                font-weight: bold;
+                text-decoration: none;
+
+                &:hover {
+                  opacity: .7;
+                }
+
+                .mat-icon {
+                  margin-left: rem-calc(5);
+                }
+              }
+            }
+          }
+        }
+
+        .mat-expansion-panel-body {
+          padding: 0;
+        }
+
+        .main-historico {
+          .status-horas {
+            div {
+              &:nth-child(even) {
+                background-color: var(--cinza_1);
+              }
+
+              padding: rem-calc(10);
+            }
+
+            .header {
+              font-size: rem-calc(20);
+              font-weight: bold;
+            }
+          }
+
+          .titulo-eventos {
+            h3 {
+              text-align: center;
+              font-size: rem-calc(20);
+              font-weight: bold;
+              margin: rem-calc(15) 0 rem-calc(20);
+            }
+          }
+
+          .eventos {
+
+            border-radius: var(--curva_borda);
+            border-color: var(--cinza_5);
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+
+            div {
+              &:nth-child(even) {
+                background-color: var(--cinza_1);
+              }
+
+              padding: rem-calc(10);
+            }
+
+            .header {
+              background-color: var(--cinza_5);
+              font-weight: bold;
+              text-align: center;
+            }
+
+            .content {
+
+              .periodos,
+              .certidao {
+                text-align: center;
+              }
+
+              .certidao {
+                .link {
+                  align-items: center;
+                  color: var(--cinza_8);
+                  display: flex;
+                  font-weight: bold;
+                  justify-content: center;
+                  text-decoration: none;
+
+                  &:hover {
+                    opacity: .7;
+                  }
+
+                  .mat-icon {
+                    margin-left: rem-calc(5);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

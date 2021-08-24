@@ -1,0 +1,20 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+
+    width: 100%;
+
+    mat-list{
+        margin-top: rem-calc(10);
+        
+        h2 {
+            font-size: rem-calc(16);
+            font-weight: bold;
+            margin-top: rem-calc(7);
+            margin-right: rem-calc(30);
+        }
+        mat-list-item {
+            width: auto;
+        } 
+    }
+}

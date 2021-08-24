@@ -1,0 +1,97 @@
+<!-- For info painel -->
+<mat-expansion-panel class="painel" *ngFor="let item of getAllEmployees.lista; let i = index" [attr.data-index]="i">
+  <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="start center">
+    <mat-panel-title class="nome-sistema" fxFlex="100%" fxFlex.gt-sm="10%" fxLayoutAlign="start center">
+      {{ item.sistema }}</mat-panel-title>
+    <mat-panel-description fxFlex="100%" fxFlex.gt-sm="90%" fxLayoutAlign="start center">
+      <div class="status" fxFlex="100%" fxFlex.gt-sm="30%" fxLayoutAlign="center center">
+        <div class="hoje" *ngIf="!checked">
+          <span class="icone {{ item.status }}"></span>
+        </div>
+        <div class="ultimos_dias" *ngIf="checked" fxFlex="100%" fxFlex.gt-sm="70%">
+          <span *ngFor="let dia_status of item.ultimos_dias;" class="{{ dia_status }}"></span>
+        </div>
+      </div>
+      <div class="info">{{ item.info }}</div>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="main-panel">
+    <!-- Manutenção programada -->
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-card class="manutencao-programada" fxFlex="100%" fxFlex.gt-sm="65%">
+        <mat-card-header class="titulo">
+          <mat-card-title>Manutenção programada</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="info" *ngFor="let subitem of item.manutencao_programada" fxLayout="column" fxLayout.gt-xs="row">
+            <div class="dia" fxFlex="100%" fxFlex.gt-sm="50%" div fxLayout="row" fxLayoutAlign="center center">
+              <h3>{{ subitem.dia }}</h3>
+            </div>
+            <div class="horario_motivo" fxFlex="100%" fxFlex.gt-sm="50%">
+              <p *ngFor="let data of subitem.info">
+                {{ data.horario }} - {{ data.motivo }}
+              </p>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <!-- Header histórico -->
+    <div class="header_historico" fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-between center">
+      <h3 class="titulo-historico" fxFlex="100%" fxFlex.gt-sm="20%">Histórico</h3>
+      <filtro-historico fxFlex="100%" fxFlex.gt-sm="80%" fxLayoutAlign="end center"></filtro-historico>
+    </div>
+    <div  fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-between start" fxLayoutGap="50px">
+      <!-- Calendário -->
+      <div class="calendario" fxFlex="100%" fxFlex.gt-sm="30%">
+        <calendario></calendario>
+        <button mat-button class="button-default button-certidao">Validar certidão <mat-icon aria-label="Baixar certidão check_circle icon">check_circle</mat-icon></button>
+
+      </div>
+      <!-- Histórico -->
+      <div class="historico-servico" fxFlex="100%" fxFlex.gt-sm="70%">
+        <mat-expansion-panel *ngFor="let info of item.historico">
+          <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="start center">
+            <mat-panel-title fxLayoutAlign="space-between center">
+              <span class="data">{{ info.dia }}</span>
+              <span class="donwload-certidao" fxLayoutAlign="end center"><a href="#" class="link">Baixar certidão
+                  <mat-icon aria-hidden="false" aria-label="Download file_download icon">file_download</mat-icon>
+                </a></span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="main-historico">
+            <!-- Status e total de horas -->
+            <div class="status-horas">
+              <div class="header" fxLayout="row" fxLayoutAlign="start center">
+                <span class="status" fxFlex="50%">Status</span>
+                <span class="total-horas" fxFlex="50%">Total de horas</span>
+              </div>
+              <div class="content" *ngFor="let status of info.status_horas" fxLayout="row" fxLayoutAlign="start center">
+                <span class="status" fxFlex="50%">{{ status.status }}</span>
+                <span class="total-horas" fxFlex="50%">{{ status.total_horas }}</span>
+              </div>
+            </div>
+            <!-- Eventos -->
+            <div class="titulo-eventos" fxLayout="row" fxLayoutAlign="start center">
+              <h3 fxFlex="100%">Eventos</h3>
+            </div>
+            <div class="eventos">
+              <div class="header" fxLayout="row" fxLayoutAlign="start center">
+                <span class="status" fxFlex="33%">Status</span>
+                <span class="periodos" fxFlex="33%">Períodos</span>
+                <span class="certidao" fxFlex="33%">Certidão</span>
+              </div>
+              <div class="content" *ngFor="let status of info.eventos" fxLayout="row" fxLayoutAlign="start center">
+                <span class="status" fxFlex="33%">{{ status.status }}</span>
+                <span class="periodos" fxFlex="33%">{{ status.periodos_inicio }} - {{ status.periodos_final }}</span>
+                <span class="certidao" fxFlex="33%"><a href="{{ status.link }}" class="link">Baixar <mat-icon
+                      aria-hidden="false" aria-label="Download file_download icon">file_download</mat-icon></a></span>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </div>
+
+  </div>
+</mat-expansion-panel>
