@@ -19,7 +19,7 @@ export class ListaSistemasComponent implements OnInit {
     ngOnInit(): void {
       this.readingjsonService.getEmployees().subscribe(
         (res: any) => {
-          this.getAllEmployees = res;
+          this.getAllEmployees = res.lista;
         }
         );
         

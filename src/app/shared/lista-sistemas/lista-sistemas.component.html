@@ -1,5 +1,5 @@
 <!-- For info painel -->
-<mat-expansion-panel class="painel" *ngFor="let item of getAllEmployees.lista; let i = index" [attr.data-index]="i">
+<mat-expansion-panel class="painel" *ngFor="let item of getAllEmployees; let i = index" [attr.data-index]="i">
   <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="start center">
     <mat-panel-title class="nome-sistema" fxFlex="100%" fxFlex.gt-sm="10%" fxLayoutAlign="start center">
       {{ item.sistema }}</mat-panel-title>
